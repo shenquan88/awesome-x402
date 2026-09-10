@@ -940,6 +940,8 @@ Development tools and utilities for x402.
 - [Sentinel Payment Preflights](https://github.com/TerminallyLazy/sentinel-recovery-support) - Free local MCP server that deterministically checks decoded x402 v2 PaymentRequired JSON against a scoped exact-EVM EIP-3009 safety profile; the preflight makes no network requests and performs no wallet access, signing, or settlement. ([MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.TerminallyLazy%2Fsentinel-recovery-services/versions/0.3.0))
 
 
+
+- [Web4 x402 Compliance Store](https://github.com/shenquan88/x402-compliance-store) - 100% x402-compliant API store: compliance checker, China-US reachability data, cross-border intel, live probes. USDC on Base. ([Live Store](https://web4shop-x402.web4shop-7023.workers.dev))
 ## 🧪 Testing & Development
 
 Tools and resources for testing x402 implementations
