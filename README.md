@@ -209,7 +209,6 @@ Real companies using x402 in production with proven scale and transaction volume
 | Radius        | Production  | Community                  | Instant (<1s)   | Micropayments             |
 
 ### Data & Social APIs
-- [Verigrace](https://verigrace.com/) — Live Evidence and Practical Intelligence for AI agents and x402 publishers: 305 pay-per-call services on Base USDC, including DNS/SSL/security checks, China-vantage reachability, A2A/x402 audits, original K-12 animated education packs, and business landing-page delivery ($19/$49). Machine discovery: [agent.json](https://verigrace.com/agent.json) | [llms.txt](https://verigrace.com/llms.txt) | [OpenAPI catalog](https://web4shop-x402.web4shop-7023.workers.dev/openapi.json) | [Live evidence](https://verigrace.com/evidence).
 - [API Witchcraft (API_Dalla)](https://apiwitchcraft.duckdns.org) — 19 hands-off pay-per-call APIs for AI agents, settling USDC on Base via Coinbase CDP Facilitator. Covers compliance (VAT/VIES validation, e-invoicing mandates, OFAC/EU/UN/UK sanctions + PEP screening, US export-control ECCN, FX rates, EPR fees), geo (IP lookup + VPN/Tor detection), crypto (prices, trending, collective arbitrage), agent-security (AgentDojo scenarios + SPAR scoring), web (scrape-permit check, BJJ lineage), lifestyle (digital-nomad visa index, weather micro-betting), and x402 seller tooling (reconcile, balance). $0.002 USDC/call, no API keys, no signup. ([llms.txt](https://apiwitchcraft.duckdns.org/llms.txt) | [openapi.json](https://apiwitchcraft.duckdns.org/openapi.json) | [agent.json](https://apiwitchcraft.duckdns.org/.well-known/agent.json))
 - [KR-DART Events](https://dartapi.ljaysk.com) - Real-time Korean corporate disclosure (DART) events for AI agents. Korea's ~2,500 daily filings polled every 15s, classified into 31 categories with importance scores, English labels and English company names. Cursor-delta stream, material-only screen, per-company timelines. $0.002-$0.01 USDC on Base or Solana via x402 (Coinbase CDP facilitator, Bazaar discovery on every 402). No API keys, no signup. ([llms.txt](https://dartapi.ljaysk.com/llms.txt)) ([OpenAPI](https://dartapi.ljaysk.com/openapi.json)) ([GitHub](https://github.com/LJaysk/kr-dart-events)) ([MCP](https://github.com/LJaysk/kr-dart-events/blob/main/mcp_server.py))
 - [Tinstop Website Intelligence API](https://tinstop.com) - Pay-per-call domain security and performance audits on Base: DNS, SSL/TLS, HTTP security headers, SPF/DKIM/DMARC, and PageSpeed. $0.02–$0.10 USDC via x402 v2 (EIP-3009). ([OpenAPI](https://tinstop.com/openapi.json) | [Discovery](https://tinstop.com/.well-known/x402) | [llms.txt](https://tinstop.com/llms.txt))
@@ -941,8 +940,6 @@ Development tools and utilities for x402.
 - [Sentinel Payment Preflights](https://github.com/TerminallyLazy/sentinel-recovery-support) - Free local MCP server that deterministically checks decoded x402 v2 PaymentRequired JSON against a scoped exact-EVM EIP-3009 safety profile; the preflight makes no network requests and performs no wallet access, signing, or settlement. ([MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.TerminallyLazy%2Fsentinel-recovery-services/versions/0.3.0))
 
 
-
-- [Web4 x402 Compliance Store](https://github.com/shenquan88/x402-compliance-store) - 100% x402-compliant API store: compliance checker, China-US reachability data, cross-border intel, live probes. USDC on Base. ([Live Store](https://web4shop-x402.web4shop-7023.workers.dev))
 ## 🧪 Testing & Development
 
 Tools and resources for testing x402 implementations
@@ -1227,6 +1224,10 @@ Projects building with or extending x402.
 - [Fresh CC0 Feed](https://cc0-feed-api.bodhinindustries.workers.dev) - Pay-per-call feed of works freshly dedicated to the public domain (CC0/Unlicense), aggregated from GitHub + Zenodo into one schema with reproducible provenance (verbatim LICENSE SHA-256). For AI agents needing modern, rights-clean assets/code/datasets to use or train on, plus disclosure-ready proof. $0.02 USDC/call on Base, no API key. ([Sample](https://cc0-feed-api.bodhinindustries.workers.dev/sample) | [llms.txt](https://cc0-feed-api.bodhinindustries.workers.dev/llms.txt))
 - [Ren API](https://ren-api-production.up.railway.app) - Seed-oil-free restaurant intelligence for AI agents with restaurant lookup and dish-swap endpoints. Data sourced from live restaurant calls; $0.01 USDC per call on Base. ([Discovery](https://ren-api-production.up.railway.app/.well-known/x402.json) | [llms.txt](https://ren-api-production.up.railway.app/llms.txt))
 - [RepoPulse](https://repo-pulse.dvd90.workers.dev) - Deterministic 0–100 health score for any public GitHub repository, with a nine-signal breakdown (commit recency, release cadence, issue hygiene, PR flow, bus factor, CI, tests, docs, dependency freshness), A–F grade and flags. $0.01 USDC on Base, no account or key. Bazaar-discoverable and MCP-ready. ([GitHub](https://github.com/dvd90/repo-pulse))
+
+
+- [web4shop x402 Paid API Services](https://web4shop-x402.web4shop-7023.workers.dev) - 111 pay-per-call x402 endpoints on Base/USDC (exact, x402 v2): mainland-China vantage reachability probes (only one in the ecosystem), 14-point x402/A2A compliance audits, deterministic DNS/SSL/security headers/domain checks, agent-launch evidence scans, document/code generation services, plus original K-12 animated lecture packs (Word + HTML player + SVG + narration). Every product returns a machine-payable 402 challenge; no API keys or signup. ([Discovery](https://web4shop-x402.web4shop-7023.workers.dev/.well-known/x402.json) | [OpenAPI](https://web4shop-x402.web4shop-7023.workers.dev/openapi.json) | [llms.txt](https://web4shop-x402.web4shop-7023.workers.dev/llms.txt) | [Agent card](https://web4shop-x402.web4shop-7023.workers.dev/.well-known/agent.json) | [GitHub](https://github.com/shenquan88/x402-endpoint))
+
 
 ### Charity & Social Impact
 
@@ -1542,3 +1543,4 @@ A composable trio of x402-payable APIs designed to be chained by autonomous agen
 
 **Recommended autonomous pipeline:** `TrustBoost /sanitize` → `Intelica /intel` → `VeraData /sanctions|/entity`. All three share the same account-free, subscription-free, wallet-only x402 model on Base + Solana.
 - [Obolpay x402 Gateway](https://x402.obolpay.xyz/) - Pay-per-call premium data on Base (USDC). Free preview embedded in the 402 challenge (evaluate before paying) + self-served reference client at /client.py. Machine-readable discovery at /.well-known/x402.
+
